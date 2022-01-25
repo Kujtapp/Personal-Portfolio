@@ -7,7 +7,7 @@
             <div class="side-wrapper">
                 <div class="text-wrapper">
                     <h1>Kujtim Ramadani</h1>
-                    <blockquote>Freelance UI/UX Graphic Designer and a newbie in <br> Front-end Development using the latest/newest technologies</blockquote>
+                    <p>Freelance UI/UX Graphic Designer and a newbie in <br> Front-end Development using the latest/newest technologies</p>
                 </div>
                 <div class="public-profiles">
                     <i class="fab fa-linkedin"></i>
@@ -41,16 +41,20 @@ export default {
     font-size: 60px;
     text-transform: uppercase;
     font-weight: 900;
+    margin-bottom: 20px;
 }
-.text-wrapper > blockquote {
-    font-size: 20px;
+.text-wrapper > p {
+    font-size: 17px;
     font-style: italic;
+    font-weight: 300;
     color: #A6B2B3;
-}
-.side-wrapper {
-    column-gap: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    line-height: 170%;
 }
 .public-profiles {
+    display: flex;
+    gap: 15px;
     font-size: 25px;
 }
 </style>

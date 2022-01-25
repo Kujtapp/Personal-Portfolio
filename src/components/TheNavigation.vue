@@ -26,7 +26,7 @@ export default {
 <style scoped>
 
 .sidebar-wrapper {
-    background-color: #05131D;
+    background-color: black;
     color: white;
     width: 15%;
     height: 100vh;
@@ -38,7 +38,6 @@ export default {
 }
 .full-name {
     margin-bottom: 60px;
-    color: #e03e27;
 }
 .navigation-menu {
     margin-bottom: 60px;
