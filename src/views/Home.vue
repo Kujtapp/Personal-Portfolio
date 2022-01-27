@@ -10,9 +10,10 @@
                     <p>Freelance UI/UX Graphic Designer and a newbie in <br> Front-end Development using the latest/newest technologies</p>
                 </div>
                 <div class="public-profiles">
-                    <i class="fab fa-linkedin"></i>
-                    <i class="fab fa-github-square"></i>
+                    <a href="https://www.linkedin.com/in/kujtim-ramadani/"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Kujtapp"><i class="fab fa-github-square"></i></a>
                 </div>
+                <router-link to="/about" class="about-button">More About Me</router-link>
             </div>
         </div>
     </div>
@@ -56,5 +57,23 @@ export default {
     display: flex;
     gap: 15px;
     font-size: 25px;
+    margin-bottom: 40px;
+}
+.public-profiles a {
+    color: black;
+}
+.about-button {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 3px solid black;
+    color: black;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.about-button:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.4s ease;
 }
 </style>

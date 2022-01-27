@@ -2,7 +2,9 @@
   <div class="main-wrapper">
       <the-navigation></the-navigation>
     <div class="right-side">
-      <router-view></router-view>
+      <transition name="fade">
+        <router-view></router-view>
+      </transition>
     </div>
   </div>
 </template>
@@ -32,5 +34,13 @@ body {
 }
 .right-side {
   width: 100%;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: 0.8s ease all;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

@@ -5,9 +5,9 @@
         </div>
         <div class="navigation-menu">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+                <router-link to="/home">Home</router-link>
+                <router-link to="/about">About</router-link>
+                <router-link to="/contact">Contact</router-link>
             </ul>
         </div>
         <div class="copyright-statement">
@@ -45,13 +45,16 @@ export default {
 .navigation-menu > ul {
     list-style-type: none;
 }
-.navigation-menu > ul > li {
+.navigation-menu > ul > a {
+    display: flex;
     margin-bottom: 20px;
     text-transform: uppercase;
     margin-right: 60px;
     letter-spacing: 3px;
+    text-decoration: none;
+    color: white;
 }
-.navigation-menu > ul > li:hover {
+.navigation-menu > ul > a:hover {
     color: #e03e27;
     cursor: pointer;
 }
